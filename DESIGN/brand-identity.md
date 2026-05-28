@@ -95,7 +95,8 @@ But the teaching is supporting evidence. The lead is the technical work.
 | Background | `#0f1117` |
 | Surface | `#18191f` |
 | Body text | `#e8eaed` |
-| Accent | `#3b82f6` (blue) or `#14b8a6` (teal) — [TBD: pick one accent] |
+| Accent | `#14b8a6` (teal) — decided |
+| Accent hover | `#2dd4bf` |
 | Muted | `#6b7280` |
 
 Appropriate for the primary target audience (XRPL / AI / crypto). Execution quality is the differentiator.

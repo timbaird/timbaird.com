@@ -2,6 +2,14 @@
 
 Running log of project milestones with links to supporting evidence where appropriate. Coarse-grained — meaningful project state changes, not commit-level detail. Most recent entries at the top.
 
+## 2026-05-28 — Site v1 built
+
+Full single-scroll page implemented in [src/pages/index.astro](../src/pages/index.astro): hero, about, featured FCM, other work, tech stack, contact. Sticky nav with Client Login button (top-right). Dark palette, Inter + JetBrains Mono via Google Fonts. Content iterated across the session for honest framing — FCM tagged "Ongoing" rather than "2022 – Present"; teaching framed as concurrent ("in addition to technical work") rather than chronological; "software engineering" terminology; remote-only + globally mobile positioning; Solidity work credited as OpenZeppelin-based contracts deployed on Polygon. Tech Stack section opens with a first-principles framing line. Resume PDF placed at [public/tim-baird-resume.pdf](../public/tim-baird-resume.pdf).
+
+## 2026-05-28 — Accent colour: teal
+
+`#14b8a6` selected as the brand accent. May be revisited during build. Recorded in [brand-identity.md](brand-identity.md).
+
 ## 2026-05-28 — Imagery decisions captured
 
 `Visual Identity → Imagery` subsection added to [brand-identity.md](brand-identity.md). Decisions: typographic OG image included; headshot, project screenshots excluded; hero code block optional (build-phase call).
