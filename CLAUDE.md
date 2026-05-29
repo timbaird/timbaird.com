@@ -72,23 +72,24 @@ timbaird.com/
 ├── CLAUDE.md
 ├── README.md
 ├── .gitignore
-├── astro.config.mjs        # Astro build configuration
+├── astro.config.mjs           # Astro build configuration
 ├── package.json
 ├── package-lock.json
 ├── tsconfig.json
-├── DESIGN/                 # technical wiki (humans + agents)
+├── og-template.html           # local-only template for regenerating public/og-image.png
+├── DESIGN/                    # technical wiki (humans + agents)
 │   ├── INDEX.md
 │   ├── brand-identity.md
 │   ├── documentation-structure.md
 │   ├── progress.md
-│   └── archive/            # substrate material and historical context
-│       ├── RESUME_2026_05_28.docx
-│       └── RESUME_2026_05_28.md
-├── public/                 # static assets copied verbatim to dist/
-│   └── favicon.svg
+│   └── archive/               # substrate material (currently empty)
+├── public/                    # static assets copied verbatim to dist/
+│   ├── favicon.ico
+│   ├── favicon.svg
+│   └── og-image.png           # Open Graph image for link previews
 └── src/
     └── pages/
-        └── index.astro     # single-scroll home page — the entire site
+        └── index.astro        # single-scroll home page — the entire site
 ```
 
 ## Tools and environment

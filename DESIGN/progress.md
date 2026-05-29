@@ -2,6 +2,18 @@
 
 Running log of project milestones with links to supporting evidence where appropriate. Coarse-grained — meaningful project state changes, not commit-level detail. Most recent entries at the top.
 
+## 2026-05-29 — Repo history scrubbed of resume `.docx`
+
+Surgically removed `DESIGN/archive/RESUME_2026_05_28.docx` from all git history via `git filter-repo`, then force-pushed. The file carried referees' direct contact details (third-party privacy concern); removing it only from current HEAD would have left it reachable via GitHub raw URLs at older commit SHAs. After this rewrite, the file is gone from every commit in the public repo. Tim retains a working copy outside the repo. CLAUDE.md §9 (Repository layout) updated to reflect the empty `archive/`.
+
+## 2026-05-29 — Pre-launch polish: OG image, doc consistency, CLAUDE.md fill-ins
+
+Generated the typographic OG image (`public/og-image.png`) by rendering `og-template.html` via headless Chrome at 1200×630. Wired `og:image`, dimensions, alt text, and `twitter:image` meta tags in `index.astro` so link previews in Slack, email, and LinkedIn render coherently. Filled in CLAUDE.md §9 (Repository layout) and updated §10 (Tools and environment) — both had been minimal/stale since the doc skeleton was first laid down. Reconciled brand-identity.md with the site copy: three lingering "since 2022" / "software architecture" framings updated to match the honest framing we landed on for the live page.
+
+## 2026-05-29 — Site live at timbaird.com
+
+Deployed to Cloudflare Pages (project `timbaird-com`) and DNS pointed at the production URL via the Pages "Custom domains" UI (apex `timbaird.com`, CF handles the CNAME flattening and SSL automatically). DNS propagated quickly. First public-facing version of the site is live.
+
 ## 2026-05-29 — Resume files cleared from repo
 
 Closes out the open follow-up from the resume-on-request decision: `public/tim-baird-resume.pdf` deleted, and the verbatim markdown transcription `archive/RESUME_2026_05_28.md` also deleted. Both files carried the same third-party privacy exposure (referees' direct phone and email). The `.docx` source remains in `archive/` as Tim's working copy — never linked from the site and never served by Astro. INDEX.md updated to drop the stale transcription entry.

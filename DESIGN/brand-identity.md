@@ -59,7 +59,7 @@ The teaching history is not a detour — it is evidence of mastery and a differe
 
 But the teaching is supporting evidence. The lead is the technical work.
 
-**Expressed directly:** *"I build real, production systems — currently in XRPL and AI/LLM. I've been doing it since 2022, and the code is live."*
+**Expressed directly:** *"I build real, production systems — currently in XRPL and AI/LLM. The code is live."*
 
 ---
 
@@ -67,8 +67,8 @@ But the teaching is supporting evidence. The lead is the technical work.
 
 1. **Lead with the work, not the bio.** FCM and its live URL (fcmud.world) should appear early. Links to GitHub repos before lengthy prose.
 2. **Specifics over generics.** "Engineered horizontal scaling of Evennia's single-threaded Twisted Reactor across multiple instances" is better than "experienced in distributed systems."
-3. **The teaching is framed for a developer audience.** Not "I was a VET teacher." More like: "I spent seven years teaching database design and software architecture at Swinburne — which is where you really learn whether you understand something."
-4. **The 2022–present period is a strength.** FCM has been running since 2022. The fact that teaching work continued alongside it is context; the FCM work is the story.
+3. **The teaching is framed for a developer audience.** Not "I was a VET teacher." More like: "I spent seven years teaching software engineering, database design, and programming at Swinburne — which is where you really learn whether you understand something."
+4. **FCM is the story, not a side note.** The fact that teaching work continued alongside it is context, not the lead.
 5. **Short, scannable prose.** Hiring managers in crypto/AI move fast. No walls of text.
 6. **Australian English.** Colour, licence, practitioner. Melbourne professional.
 
