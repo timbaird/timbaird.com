@@ -36,7 +36,7 @@ These are the principles every implementation decision must respect. Getting the
 Scope boundaries below reflect decisions already made. Do not add features in these categories without an explicit conversation and a update to this file.
 
 - **Server-side code and APIs.** The site is static Astro output deployed to Cloudflare Pages. Any dynamic backend behaviour lives at `app.timbaird.com`, not here.
-- **Contact form with backend.** A plain email link is the approach. A form requires a third-party service or backend for no meaningful gain over a mailto link.
+- ~~**Contact form with backend.**~~ **Reversed 2026-05-29** — GHL-embedded contact form now lives in the Contact section. Privacy from public email scraping + automated acknowledgement outweighed the simplicity of mailto, particularly given the primary visitor already has Tim's direct details on the resume PDF. See [DESIGN/brand-identity.md](DESIGN/brand-identity.md) for full rationale.
 - **Authentication or gated content.** The client portal is at `app.timbaird.com`. Nothing on `timbaird.com` requires a login.
 - **Dark/light mode toggle.** Dark palette is the decided visual identity. A toggle adds complexity and dilutes it.
 - **JS-heavy animations and effects.** Parallax, canvas, three.js, scroll-triggered theatrics — all excluded. Conflicts with the layout principle of speed and no unnecessary motion.

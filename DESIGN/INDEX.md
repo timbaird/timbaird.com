@@ -15,5 +15,4 @@ Map of all design documents in this directory, organised by category. Add new do
 
 Historical context and substrate material, not authoritative design documentation. Material in `archive/` is preserved per the "don't delete; supersede" principle.
 
-- **[archive/RESUME_2026_05_28.docx](archive/RESUME_2026_05_28.docx)** — Tim's updated resume (2026-05-28); the canonical statement of professional positioning that the site must stay consistent with.
-- **[archive/RESUME_2026_05_28.md](archive/RESUME_2026_05_28.md)** — Verbatim markdown transcription of the same resume (pandoc conversion). Header and referees sections render as HTML tables due to Word's two-column layout; no word changes made.
+- **[archive/RESUME_2026_05_28.docx](archive/RESUME_2026_05_28.docx)** — Tim's updated resume (2026-05-28); the canonical statement of professional positioning that the site must stay consistent with. Working copy only — never linked from the site.

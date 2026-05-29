@@ -2,6 +2,28 @@
 
 Running log of project milestones with links to supporting evidence where appropriate. Coarse-grained — meaningful project state changes, not commit-level detail. Most recent entries at the top.
 
+## 2026-05-29 — Resume files cleared from repo
+
+Closes out the open follow-up from the resume-on-request decision: `public/tim-baird-resume.pdf` deleted, and the verbatim markdown transcription `archive/RESUME_2026_05_28.md` also deleted. Both files carried the same third-party privacy exposure (referees' direct phone and email). The `.docx` source remains in `archive/` as Tim's working copy — never linked from the site and never served by Astro. INDEX.md updated to drop the stale transcription entry.
+
+## 2026-05-29 — Custom favicon added
+
+Replaced the default Astro favicon (`favicon.ico` + `favicon.svg`) with Tim's branded version.
+
+## 2026-05-29 — Footer year made dynamic
+
+Footer copyright year now computed at build time via `new Date().getFullYear()` rather than hardcoded. Each fresh build picks up the current year.
+
+## 2026-05-29 — Public resume download removed; resume + referees on request
+
+Removed the "Download resume (PDF)" button from the Contact section. The PDF contains Tim's direct phone, full work history detail, *and* two referees' direct contact details (phone, email) — publishing it on a public page exposed third-party contact details, a privacy breach beyond Tim's own information. New framing: "Resume and referees available on request" — Tim sends the PDF in response to legitimate form enquiries. Schema.org `Person.email` field also removed from the JSON-LD in the page head (same scraper leak). [brand-identity.md](brand-identity.md) updated to document the rationale.
+
+**Open follow-up:** the file `public/tim-baird-resume.pdf` is still served at `https://timbaird.com/tim-baird-resume.pdf` even though it's no longer linked. Needs to be moved out of `public/` (to `DESIGN/archive/` alongside the `.docx`, or `.gitignore`'d entirely if the GitHub repo is public) before deployment.
+
+## 2026-05-29 — Contact strategy reversed; GHL form integrated
+
+Public mailto link removed; replaced by a GHL-embedded contact form in the Contact section. Rationale: the primary website visitor is someone who has received the resume from a job application and *already has* Tim's direct email and phone — the form serves only cold/unsolicited inbound. Privacy from scraping + automated acknowledgement outweigh the original "mailto only" stance. Contact section restructured: lede → resume-first intro → resume download button → form embed → humour note. Hero "Get in touch" CTA now scrolls to `#contact` instead of opening mailto. Both [CLAUDE.md §6](../CLAUDE.md) (Out of scope) and [brand-identity.md](brand-identity.md) updated to document the reversal.
+
 ## 2026-05-28 — Site v1 built
 
 Full single-scroll page implemented in [src/pages/index.astro](../src/pages/index.astro): hero, about, featured FCM, other work, tech stack, contact. Sticky nav with Client Login button (top-right). Dark palette, Inter + JetBrains Mono via Google Fonts. Content iterated across the session for honest framing — FCM tagged "Ongoing" rather than "2022 – Present"; teaching framed as concurrent ("in addition to technical work") rather than chronological; "software engineering" terminology; remote-only + globally mobile positioning; Solidity work credited as OpenZeppelin-based contracts deployed on Polygon. Tech Stack section opens with a first-principles framing line. Resume PDF placed at [public/tim-baird-resume.pdf](../public/tim-baird-resume.pdf).

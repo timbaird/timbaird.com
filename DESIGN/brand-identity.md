@@ -143,7 +143,7 @@ Functional exceptions:
 - **Structure: single-scroll page with sticky anchor-linked nav — decided.** One URL, controlled reading order, right-sized for the content. Multi-page can be added later if a blog is introduced (individual post URLs require it). Not a JS SPA — static HTML with sections and anchor links.
 - Education history: one sentence in the bio, framed as mastery evidence — e.g. "Seven years teaching architecture and databases at Swinburne" signals depth to a developer audience. Full history lives in the resume PDF only.
 - Blog / writing section — only if Tim will actively maintain it. A neglected blog hurts more than it helps.
-- Contact method — email link preferred unless there is a specific reason for a form.
+- **Contact method — decided (reversed 2026-05-29).** GHL-embedded contact form in the Contact section; no public email, no public resume download. The primary website visitor already has the resume (and Tim's direct email and phone) from a job application — the form serves only cold inbound. Tim sends the resume in response to legitimate enquiries via the form. Public resume download was removed because the PDF contains referees' direct phone/email — a third-party privacy issue beyond Tim's own scraping concern. Schema.org `Person` `email` field also removed from the page JSON-LD to close the same leak. Framing on the page: "Resume and referees available on request. Direct details stay off the public page — Nigerian princes don't fill out forms."
 
 ---
 
